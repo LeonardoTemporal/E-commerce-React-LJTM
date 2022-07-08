@@ -3,39 +3,46 @@
     --padding-tablet: 50px;
     --padding-desktop: 100px;
     --primary-color: white;
-    --secondary-color: #F85555;
+    --secondary-color: #333;
     --border-color: #9996;
     --color-primary-text: black;
     --color-secondary-text: #9996;
+    --color-footer: #3C3C3B;
+    --color-hover: rgba(88, 88, 88, 0.863);
+    --font-family: 'Lato', sans-serif;
+  }
+  
 
-}
-
-/* -- Reset -- */
-
-
-*{
+  *{
     box-sizing: border-box;
-}
-
-html {
+  }
+  html {
     scroll-behavior: smooth;
-}
-
-body {
+  }
+  body{
     margin: 0;
-}
-
-h1, h2, h3, h4, p, ul {
+    font-family: var(--font-family);
+  }
+  h1, h2, h3, h4, p, ul {
     margin-top: 0;
     margin-bottom: 0;
-}
-
-ul {
+  }
+  ul {
     list-style: none;
     padding-left: 0;
-}
-
-a {
+  }
+  a {
     text-decoration: none;
     color: inherit;
-}
+  }
+  img {
+    width: 100%;
+  }
+  .App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    flex: 1;
+  }

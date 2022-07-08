@@ -15,9 +15,6 @@ const SimilarProducts = ({product}) => {
         }
       }, [product])
     
-
-
-    console.log('Aqui', allProducts)
     
   return (
     <article className='similar-products'>

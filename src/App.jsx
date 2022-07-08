@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"
 import { Route, Routes } from "react-router-dom"
+import axios from 'axios'
 import CartScreen from "./components/Cart/CartScreen"
 import HomeScreen from "./components/Home/HomeScreen"
 import LoginScreen from "./components/Login/LoginScreen"
@@ -13,7 +14,25 @@ import { getAllproducts } from "./store/slices/products.slice"
 
 
 function App() {
+  
+  const createUser = () => {
+    const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/users'
 
+    const newUser = {
+      firstName: "Leonardo",
+      lastName: "TMLJ",
+      email: "hellspawn@gmail.com",
+      password: "leo3009",
+      phone: "6666666666",
+      role: "admin"
+    }
+
+    axios.post(URL, newUser)
+    .then(res => console.log(res.data))
+    .catch(err => console.log(err.data))
+  }
+
+  
   const dispatch = useDispatch()
 
   useEffect(() => {

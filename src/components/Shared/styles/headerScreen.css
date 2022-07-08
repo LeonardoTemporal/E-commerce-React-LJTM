@@ -7,6 +7,9 @@
 .header__title {
   color: var(--secondary-color);
 }
+.header__title:hover {
+  color: var(--color-hover);
+}
 .header__menuham{
   font-size: 1.4rem;
   position: relative;
@@ -43,8 +46,11 @@
   align-items: center;
   cursor: pointer;
 }
+.navbar__links:hover {
+  color: var(--color-hover);
+}
 .navbar__link-active {
-  color: var(--secondary-color);
+  color: crimson;
 }
 .navbar__links i {
   margin-bottom: 5px;
