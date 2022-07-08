@@ -14,7 +14,7 @@ const HeaderScreen = () => {
     <header className="header">
       <h1 className="header__title">
       <i class="fa-brands fa-shopify"></i>
-        <Link to='/'>uper Comerce</Link>
+        <Link to='/'>uper Commerce</Link>
       </h1>
       <div onClick={clickMenuHam} className="header__menuham">
         <i className="fa-solid fa-bars"></i>
